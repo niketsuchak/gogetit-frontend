@@ -1,0 +1,19 @@
+body{
+    display: flex;
+}
+
+.sidebar{
+    background: rgb(156,151,235);
+    background: linear-gradient(180deg, rgba(156,151,235,1) 0%, rgba(244,160,184,1) 100%);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+
+.sidebar, .playarea{
+    flex: 1;
+}
