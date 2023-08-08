@@ -1,19 +1,54 @@
-body{
+body {
     display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-.sidebar{
-    background: rgb(156,151,235);
-    background: linear-gradient(180deg, rgba(156,151,235,1) 0%, rgba(244,160,184,1) 100%);
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    transition: all 0.5s ease;
+.sidebar {
+    background: linear-gradient(180deg, #7B7BE9 0%, #EE215E 100%);
+    color: white;
+    width: 50vw; /* Make the sidebar cover half of the viewport width */
+    height: 100vh;
+    padding-top: 20px;
 }
 
-.sidebar, .playarea{
+.sidebar, .playarea {
     flex: 1;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 2vw; /* Adjusted padding using vw units */
+}
+
+.sidebar li {
+    margin-bottom: 2vh; /* Adjusted margin using vh units */
+}
+
+.sidebar a {
+    display: block;
+    padding: 1vw 2vw; /* Adjusted padding using vw units */
+    background: none; /* Removed the background property */
+    border-radius: 2vw; /* Adjusted border radius using vw units */
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+    background-clip: content-box; /* Inherit background from behind element */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Added a slight box shadow */
+}
+
+.sidebar a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Slightly darken the hover color */
+}
+
+.playarea {
+    flex: 1;
+    padding: 2vw; /* Adjusted padding using vw units */
 }
